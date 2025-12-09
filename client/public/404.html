@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="0; url=/" />
+    <title>Redirecting…</title>
+  </head>
+  <body>
+    <p>Redirecting to <a href="/">/</a>…</p>
+    <script>
+      // Ensure hard refreshes on deep routes land on the SPA entry
+      try {
+        var target = "/";
+        if (location && location.origin) target = location.origin + "/";
+        location.replace(target);
+      } catch (e) {}
+    </script>
+  </body>
+</html>
