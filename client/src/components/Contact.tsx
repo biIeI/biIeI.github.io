@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Mail, Phone, Linkedin, FileText, BookOpen } from "lucide-react";
+import { Mail, Phone, Linkedin, Github, FileText, BookOpen } from "lucide-react";
 import ContactForm from "./ContactForm";
 import { Button } from "@/components/ui/button";
 
@@ -29,6 +29,12 @@ export default function Contact() {
       label: t("contact.linkedin"),
       value: "bilel-kaoulala",
       link: "https://linkedin.com/in/bilel-kaoulala",
+    },
+    {
+      icon: Github,
+      label: t("contact.github"),
+      value: "biIeI",
+      link: "https://github.com/biIeI",
     },
   ];
 
